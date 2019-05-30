@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guessing Game</title>
+
+    <link rel="stylesheet" href="../Word-Guess-Game/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Monoton&display=swap" rel="stylesheet">
+    <script src="../Word-Guess-Game/assets/javascript/game.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!--Heading-->
+
+    <div class="mainHeader">
+        <h1 class="headerOne">Animal Guessing Game</h1>
+    </div>
+    <br>
+    <!--
+    <div class="imgContainer">
+        <img src="" alt="">
+    </div>
+    -->
+
+
+    <div class="background">
+        <div class="backgroundContainer">
+
+            <!--Main Content and each individual container-->
+
+            <div id="score">
+
+                <div id="topbox">
+                    <form>
+                        <h2 id="h2"></h2>
+                        <h3 id="h3"></h3>
+                        <input type="text" id="letter" maxlength="1" placeholder="Enter a Letter!" />
+
+                        <br>
+                        <br>
+
+                        
+                        <input type="button" value="letter" onclick="letter"() id="guessButton" value="letter">
+                            Guess 
+                        </button>
+                    </form>
+
+                    <br>
+
+                </div>
+
+                <hr>
+
+                <div class="catagories">
+                    <h4 id="guessesRemaining">Guesses Remaining:</h3>
+                </div>
+
+                <hr>
+
+                <div class="catagories">
+                    <h4 id="lossCount">LOSSES:</h4>
+                </div>
+
+                <hr>
+
+                <div class="catagories">
+                    <h4 id="winCount">WINS:</h4>
+                </div>
+
+                <hr>
+
+                <div class="catagories">
+                    <h4 id="incorrectGuesses">Incorrect Guesses:</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+
+.mainHeader {
+    /*
+    background-image: url(http://blogs.discovermagazine.com/d-brief/files/2017/08/shutterstock_244338682.jpg);
+    */
+    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    margin-left: 15%;
+    margin-right: 15%;
+    border: solid black;
+    box-shadow: 0 0 10px 5px #000000;
+    
+}
+
+.headerOne {
+    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    font-size: 45px;
+    color: white;
+     text-shadow: 4px 4px 8px #000000;
+} 
+
+body {
+    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    
+}
+.imgContainer {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+h3 {
+    font-size: 25px;
+}
+
+span {
+    border: solid blueviolet;
+    width: 10px;
+}
+.backgroundContainer {
+    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 0 10px 5px #000000;
+}
+
+
+h5 {
+    text-align: center;
+    
+    
+}
+input {
+    text-align: center;
+    
+}
+.submit {
+	margin-top: 10px;
+	border-radius: 10px;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	width: 20%;
+	padding: 5px;
+	text-align: center;
+    font-weight: bold;
+    margin: auto;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
+  
