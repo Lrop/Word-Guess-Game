@@ -40,7 +40,6 @@ function doFunction() {
 
     for (let i= 0; i < answer.length; i++)
     {
-        //alert(letters[i]);
         if (userLetter == letters[i])
         {
             display[i] = userLetter;
@@ -51,34 +50,8 @@ function doFunction() {
     document.getElementById('h3').innerHTML = output;
     output=' ';
     attempsLeft--;
-    
-    if (userLetter == output)
-    {
-        document.getElementById('winCount').innerHTML =  "YOU WINN!";
-
-    }
-    
-    
-    document.getElementById('guessesRemaining').innerHTML = 'You Have ' + attempsLeft + ' Guesses Left';
-    
-
-    if (attempsLeft === 0)
-    {
-        document.getElementById('lossCount').innerHTML = "NOT EVEN CLOSE!!!";
         
-        
-
-    }
-
-    
 }
-
-
-
-
-
-
-
 
 window.onload = function()
 {
