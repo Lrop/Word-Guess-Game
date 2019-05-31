@@ -3,7 +3,8 @@
     /*
     background-image: url(http://blogs.discovermagazine.com/d-brief/files/2017/08/shutterstock_244338682.jpg);
     */
-    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    
+    background-image: url(../images/sky-and-water.jpg);
     margin-left: 15%;
     margin-right: 15%;
     border: solid black;
@@ -12,15 +13,16 @@
 }
 
 .headerOne {
-    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
+    background-image: url(../images/sky-and-water.jpg);
+
     font-size: 45px;
     color: white;
      text-shadow: 4px 4px 8px #000000;
 } 
 
 body {
-    background-image: url(https://brain-sells.com/wp-content/uploads/2016/03/sky-and-water.jpg);
-    width: 100%;
+    background-image: url(../images/farm-animals-cartoon-heads-big-set-vector-4911631.jpg);
+    width:100%;
 }
 
 h1 {
@@ -80,7 +82,10 @@ input {
     color: white;
 }
 
+.refreshButton {
+    text-align: center;
+    margin: auto;
+    
+}
 
 
-
-  

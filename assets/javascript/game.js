@@ -1,73 +1,81 @@
-//var $ = function (id) {
- //   return document.getElementById (id);
-//}
-
-    let game = ['ELEPHANTS', 'TIGERS', 'RACOONS', 'WALABEES', 'CROCODILE', 'JELLYFISH']
+    let game = ['elephants', 'tigers', 'racoons', 'walabees', 'crocodile', 'jellyfish']
     let choice = Math.floor(Math.random()*6) ;
     let answer = game[choice];
     let myLength = answer.length ;
     let display = [myLength];
     let win = myLength;
     let letters = answer.split('');
-    let attempsLeft = 10;
+    let attempsLeft = 16;
     let output = "";
     let userLetter = "";
+    console.log(attempsLeft);
      
 
-let setup = function()
+const setup = function()
 {
-    for (var i= 0; i < answer.length; i++)
+    for (let i= 0; i < answer.length; i++)
     {
         display[i] = "_ ";
         output = output + display[i];
+        
     }
     document.getElementById("h3").innerHTML = output;
     output = "";
+    console.log({attempsLeft});
+    document.getElementById('guessesRemaining').innerHTML = 'You Have ' + '16' + ' Guesses Left';
 }
 
-let submit = function()
-{
-    var letter = document.getElementById("letter").value;
+document.addEventListener('keypress', event => {
+    console.log(event.key);
+    
+}); 
 
-    if (letter.length > 0) {
-        for (var i=0; i < game.length; i++) {
-            answerArray[i] = '_';
-        }
-    }
-    //output = '';
-    //userLetter= $('letter').value;
-   // $('letter').value = '';
+function doFunction() {
+ 
+    output = '';
+    userLetter= $('#letter')[0].value;
+    console.log(   $('#letter')[0]   )
+    $('letter').value = '';
+    console.log(userLetter);
 
-    for (var c= 0; c < answer.length; c++)
+    for (let i= 0; i < answer.length; i++)
     {
-        //alert(letters[c]);
-        if(userLetter.toUpperCase() == letters[c])
+        //alert(letters[i]);
+        if (userLetter == letters[i])
         {
-            display[c] = userLetter.toUpperCase();
+            display[i] = userLetter;
             
         }
-        output = output + display[c] + ' ';
+        output = output + display[i] + ' ';
     }
     document.getElementById('h3').innerHTML = output;
-    output='';
+    output=' ';
     attempsLeft--;
     
-    if (win < 1)
+    if (userLetter == output)
     {
-        document.getElementById('winCount').innerHTML = "YOU WINN!";
+        document.getElementById('winCount').innerHTML =  "YOU WINN!";
 
     }
-    else if (attempsLeft < 1)
+    
+    
+    document.getElementById('guessesRemaining').innerHTML = 'You Have ' + attempsLeft + ' Guesses Left';
+    
+
+    if (attempsLeft === 0)
     {
-        document.getElementById('lossCount').innerHTML = "YOU LOSSE!!";
+        document.getElementById('lossCount').innerHTML = "NOT EVEN CLOSE!!!";
+        
+        
 
     }
-    else 
-    {
-        document.getElementById('guessesRemaining').innerHTML = 'You Have ' + attempsLeft + ' Guesses Left';
-        	
-    }
+
+    
 }
+
+
+
+
 
 
 
@@ -75,6 +83,6 @@ let submit = function()
 window.onload = function()
 {
     setup();
-    submit().onclick = submit;
-    //$('submit').onclick = submit;
+    doFunction();
+    
 }

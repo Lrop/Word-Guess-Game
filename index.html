@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Word-Guess-Game/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Monoton&display=swap" rel="stylesheet">
-    <script src="../Word-Guess-Game/assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -24,14 +24,9 @@
     <div class="mainHeader">
         <h1 class="headerOne">Animal Guessing Game</h1>
     </div>
+
     <br>
-    <!--
-    <div class="imgContainer">
-        <img src="" alt="">
-    </div>
-    -->
-
-
+  
     <div class="background">
         <div class="backgroundContainer">
 
@@ -41,17 +36,17 @@
 
                 <div id="topbox">
                     <form>
-                        <h2 id="h2"></h2>
-                        <h3 id="h3"></h3>
-                        <input type="text" id="letter" maxlength="1" placeholder="Enter a Letter!" />
+
+                        <h2 id="h3"></h2>
+                        <input type="text" id="letter" maxlength="1" placeholder="Enter a Letter!"/>
 
                         <br>
                         <br>
 
-                        
-                        <input type="button" value="letter" onclick="letter"() id="guessButton" value="letter">
+                        <button type="button" value="letter" onclick="doFunction()" id="guessButton" value="letter">
                             Guess 
                         </button>
+
                     </form>
 
                     <br>
@@ -61,13 +56,13 @@
                 <hr>
 
                 <div class="catagories">
-                    <h4 id="guessesRemaining">Guesses Remaining:</h3>
+                    <h4 id="guessesRemaining">GUESSES REMAINING:</h3>
                 </div>
 
                 <hr>
 
                 <div class="catagories">
-                    <h4 id="lossCount">LOSSES:</h4>
+                    <h4 id="lossCount">WILL YOU BE CHAMPION?</h4>
                 </div>
 
                 <hr>
@@ -79,12 +74,17 @@
                 <hr>
 
                 <div class="catagories">
-                    <h4 id="incorrectGuesses">Incorrect Guesses:</h4>
+                    <h4 id="incorrectGuesses">INCORRECT GUESSES:</h4>
                 </div>
             </div>
         </div>
     </div>
     </div>
+     <div>
+            <INPUT class="refreshButton" TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+            </FORM>
+     </div>
+           
 
 
 </body>
