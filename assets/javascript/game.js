@@ -46,6 +46,7 @@ function Game() {
   console.log(gapsAndCorrect);
 }
 
+// Reset Function
 function reset() {
   guessesRemaining = 15;
   incorrectGuess = [];
@@ -56,7 +57,7 @@ function reset() {
 //If/Else, to see if letter selected matches random word
 function checkLetters(letter) {
   var letterInWord = false;
-  //if the generated randomword is equal to the letter entered... then variable is true
+
   for (var i = 0; i < gaps; i++) {
     if (randomWord[i] == letter) {
       letterInWord = true;
@@ -85,18 +86,16 @@ function complete() {
     "wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining
   );
 
-  //if WON...then alert, reset new round
+  //if WON...
   if (letterWord.toString() == gapsAndCorrect.toString()) {
     wins++;
-    // aud();
-    // alert("You Won! Press OK to Play Again!");
     reset();
 
     //display wins on screen
     document.getElementById("winstracker").innerHTML = " " + wins;
     alert("You Won! Press OK to Play Again!");
 
-    //if LOST...then alert and reset new round
+    //if LOST...
   } else if (guessesRemaining === 0) {
     losses++;
     alert("Good Try! Press OK to Play Again!");
