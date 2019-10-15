@@ -25,6 +25,7 @@ function Game() {
   randomWord = words[Math.floor(Math.random() * words.length)];
 
   // split the individual word into separate arrays, and store in new array
+  // letterWord = randomWord.split("");
   letterWord = randomWord.split("");
 
   //store length in gaps
